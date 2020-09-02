@@ -10,9 +10,9 @@ $(function () {
     echarts_6();
     function echarts_1() {
             // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('echart1'));
+        var myChart = echarts.init(document.getElementById('echart1'));
 
-           option = {
+        option = {
       //  backgroundColor: '#00265f',
         tooltip: {
             trigger: 'axis',
@@ -25,14 +25,14 @@ $(function () {
             top:'10px',
             right: '0%',
             bottom: '4%',
-           containLabel: true
+            containLabel: true
         },
         xAxis: [{
             type: 'category',
-                data: ['电影1', '电影2', '电影3', '电影4', '电影5', '电影6', '电影7'],
+            data: ['无言的山丘', '艺术创想', '泰坦尼克号', '星际牛仔', '老友记', '肖申克的救赎', '飞出个未来'],
             axisLine: {
                 show: true,
-             lineStyle: {
+                lineStyle: {
                     color: "rgba(255,255,255,.1)",
                     width: 1,
                     type: "solid"
@@ -49,19 +49,20 @@ $(function () {
                     splitNumber: 15,
                     textStyle: {
                         color: "rgba(255,255,255,.6)",
-                        fontSize: '12',
+                        fontSize: '8',
                     },
                 },
         }],
         yAxis: [{
             type: 'value',
+            min: 5,
             axisLabel: {
                //formatter: '{value} %'
                 show:true,
-                 textStyle: {
-                        color: "rgba(255,255,255,.6)",
-                        fontSize: '12',
-                    },
+                textStyle: {
+                    color: "rgba(255,255,255,.6)",
+                    fontSize: '12',
+                },
             },
             axisTick: {
                 show: false,
@@ -83,7 +84,7 @@ $(function () {
         series: [
             {
             type: 'bar',
-            data: [200, 300, 300, 900, 1500, 1200, 600],
+            data: [9.684211, 9.671498, 9.368421, 9.324201, 9.200000, 9.196787, 9.134884],
             barWidth:'35%', //柱子宽度
            // barGap: 1, //柱子之间间距
             itemStyle: {
@@ -105,11 +106,9 @@ $(function () {
             });
         }
     function echarts_2() {
-            // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('echart2'));
+        var myChart = echarts.init(document.getElementById('echart2'));
 
-           option = {
-      //  backgroundColor: '#00265f',
+        option = {
         tooltip: {
             trigger: 'axis',
             axisPointer: { type: 'shadow'}
@@ -123,7 +122,7 @@ $(function () {
         },
         xAxis: [{
             type: 'category',
-                data: ['电影1', '电影2', '电影3', '电影4', '电影5', '电影6', '电影7'],
+                data: ['千王之王', '异种', '山村老尸', '黄飞鸿之西域雄狮', '醉拳3', '异形3', '一个好人'],
             axisLine: {
                 show: true,
              lineStyle: {
@@ -143,7 +142,7 @@ $(function () {
                     splitNumber: 15,
                     textStyle: {
                         color: "rgba(255,255,255,.6)",
-                        fontSize: '12',
+                        fontSize: '8',
                     },
                 },
         }],
@@ -178,7 +177,7 @@ $(function () {
             {
 
             type: 'bar',
-            data: [1500, 1200, 600, 200, 300, 300, 900],
+            data: [5.283721, 5.322115, 5.359223, 5.363208, 5.391304, 5.416667, 5.495327],
             barWidth:'35%', //柱子宽度
            // barGap: 1, //柱子之间间距
             itemStyle: {
@@ -221,7 +220,7 @@ $(function () {
         },
         xAxis: [{
             type: 'category',
-                data: ['热词1', '热词2', '热词3', '热词4', '热词4', '热词5', '热词6', '热词7'],
+                data: ['经典', '故事', '剧情', '好看', '喜欢', '感觉', '小时候', '不错'],
             axisLine: {
                 show: true,
              lineStyle: {
@@ -274,7 +273,7 @@ $(function () {
         }],
         series: [{
             type: 'bar',
-            data: [2, 3, 3, 9, 15, 12, 6, 4, 6, 7, 4, 10],
+            data: [3725, 3920, 2511, 2304, 6089, 2672, 2604, 2125],
             barWidth:'35%', //柱子宽度
            // barGap: 1, //柱子之间间距
             itemStyle: {
@@ -296,7 +295,6 @@ $(function () {
         }
 
     function echarts_4() {
-        // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('echart4'));
 
         option = {
@@ -330,7 +328,7 @@ $(function () {
                 axisLabel:  {
                     textStyle: {
                         color: "rgba(255,255,255,.6)",
-                        fontSize:12,
+                        fontSize:10,
                     },
                 },
                 axisLine: {
@@ -340,7 +338,7 @@ $(function () {
 
                 },
 
-                data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24']
+                data: ['2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']
 
             }, {
 
@@ -408,8 +406,7 @@ $(function () {
                             borderWidth: 12
                         }
                     },
-                    data: [3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4,3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
-
+                    data: [68, 451, 841, 2365, 2578, 4193, 5439, 4754, 2877, 1637, 751, 1069, 2115, 1463, 1369, 1208]
                 },
                 {
                     name: '负向评论',
@@ -444,8 +441,7 @@ $(function () {
                             borderWidth: 12
                         }
                     },
-                    data: [5, 3, 5, 6, 1, 5, 3, 5, 6, 4, 6, 4, 8, 3, 5, 6, 1, 5, 3, 7, 2, 5, 1, 4]
-
+                    data: [115, 649, 1341, 3424, 4058, 6649, 8052, 7073, 4005, 2300, 1186, 1826, 3865, 2907, 2398, 1820]
                 },
 
             ]

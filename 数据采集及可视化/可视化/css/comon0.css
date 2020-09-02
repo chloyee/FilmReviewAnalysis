@@ -26,7 +26,6 @@ a:hover{ color:#06c; text-decoration: none!important}
 }
 .pulll_left{float:left;}
 .pulll_right{float:right;}
-/*谷哥滚动条样式*/
 
   ::-webkit-scrollbar {width:5px;height:5px;position:absolute}
   ::-webkit-scrollbar-thumb {background-color:#5bc0de}

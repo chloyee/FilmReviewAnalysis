@@ -12,7 +12,7 @@ class ReviewspiderSpider(scrapy.Spider):
         print("=-" * 100)
         # 90年代经典电影
         # https://movie.douban.com/j/new_search_subjects?sort=U&range=0,10&tags=%E7%BB%8F%E5%85%B8&start=0&year_range=1990,1999
-        for count in range(420, 520, 20):
+        for count in range(520, 620, 20):
             fir_url = 'https://movie.douban.com/j/new_search_subjects?sort=U&range=0,10&tags=%E7%BB%8F%E5%85%B8&start={}&year_range=1990,1999'.format(count)
             print(fir_url)
             yield scrapy.Request(fir_url, callback=self.parse_main, dont_filter=True)
