@@ -622,11 +622,11 @@ $(function () {
                 label: {show:false},
                 labelLine: {show:false},
                 data:[
-                    {value:1, name:'1★'},
-                    {value:4, name:'2★'},
-                    {value:2, name:'3★'},
-                    {value:2, name:'4★'},
-                    {value:1, name:'5★'},
+                    {value:31, name:'1★'},
+                    {value:218, name:'2★'},
+                    {value:1117, name:'3★'},
+                    {value:1868, name:'4★'},
+                    {value:1326, name:'5★'},
                 ]
             }
         ]
@@ -680,11 +680,11 @@ $(function () {
                     label: {show:false},
                     labelLine: {show:false},
                     data:[
-                        {value:1, name:'1★'},
-                        {value:4, name:'2★'},
-                        {value:2, name:'3★'},
-                        {value:2, name:'4★'},
-                        {value:1, name:'5★'},
+                        {value:13, name:'1★'},
+                        {value:57, name:'2★'},
+                        {value:304, name:'3★'},
+                        {value:661, name:'4★'},
+                        {value:562, name:'5★'},
                     ]
                 }
             ]
@@ -738,11 +738,11 @@ $(function () {
                     label: {show:false},
                     labelLine: {show:false},
                     data:[
-                        {value:1, name:'1★'},
-                        {value:4, name:'2★'},
-                        {value:2, name:'3★'},
-                        {value:2, name:'4★'},
-                        {value:1, name:'5★'},
+                        {value:93, name:'1★'},
+                        {value:406, name:'2★'},
+                        {value:2405, name:'3★'},
+                        {value:4029, name:'4★'},
+                        {value:2869, name:'5★'},
                     ]
                 }
             ]
