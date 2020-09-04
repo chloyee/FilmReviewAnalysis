@@ -492,7 +492,8 @@ $(function () {
             itemGap: 12,
             bottom: '3%',
 
-            data: ['画质', '音效', '剧情', '明星'],
+            data: ['明星', '音效', '画质', '剧情' ],
+            // 12588 4304 122 16993
             textStyle: {
                         color: 'rgba(255,255,255,.6)',
                     }
@@ -500,7 +501,7 @@ $(function () {
 
         series: [
             {
-            name: '画质',
+            name: '明星',
             type: 'pie',
             clockWise: false,
             center: ['50%', '42%'],
@@ -508,7 +509,7 @@ $(function () {
             itemStyle: dataStyle,
             hoverAnimation: false,
             data: [{
-                value: 80,
+                value: 16993,
                 name: '01'
             }, {
                 value: 20,
@@ -526,10 +527,28 @@ $(function () {
             itemStyle: dataStyle,
             hoverAnimation: false,
             data: [{
-                value: 70,
+                value: 12588,
                 name: '02'
             }, {
                 value: 30,
+                name: 'invisible',
+                tooltip: {show: false},
+                itemStyle: placeHolderStyle
+            }]
+        },
+            {
+            name: '画质',
+            type: 'pie',
+            clockWise: false,
+            hoverAnimation: false,
+            center: ['50%', '42%'],
+            radius: ['39%', '50%'],
+            itemStyle: dataStyle,
+            data: [{
+                value: 4304,
+                name: '03'
+            }, {
+                value: 35,
                 name: 'invisible',
                 tooltip: {show: false},
                 itemStyle: placeHolderStyle
@@ -541,28 +560,10 @@ $(function () {
             clockWise: false,
             hoverAnimation: false,
             center: ['50%', '42%'],
-            radius: ['39%', '50%'],
-            itemStyle: dataStyle,
-            data: [{
-                value: 65,
-                name: '03'
-            }, {
-                value: 35,
-                name: 'invisible',
-                tooltip: {show: false},
-                itemStyle: placeHolderStyle
-            }]
-        },
-            {
-            name: '明星',
-            type: 'pie',
-            clockWise: false,
-            hoverAnimation: false,
-            center: ['50%', '42%'],
             radius: ['29%', '40%'],
             itemStyle: dataStyle,
             data: [{
-                value: 60,
+                value: 122,
                 name: '04'
             }, {
                 value: 40,
